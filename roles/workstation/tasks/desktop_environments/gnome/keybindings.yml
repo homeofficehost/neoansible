@@ -190,12 +190,12 @@
 #     - { key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-down", value: "['<Shift><Super>Page_Down']" }
 #     - { key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-up", value: "['<Shift><Super>Page_Up']" }
 
-# - name: gnome | keybindings | set maximize/minimize key bindings
-#   become_user: "{{ username }}"
-#   dconf:
-#     key: "/org/gnome/desktop/wm/keybindings/{{ item.key }}"
-#     value: "{{ item.value}}"
-#   with_items:
-#     - { key: maximize, value: "'<Super>Up'" }
-#     - { key: unmaximize, value: "'<Super>Down'" }
-#     - { key: close, value: "'<Primary><Shift>q'" }
+- name: gnome | keybindings | set maximize/minimize key bindings
+  become_user: "{{ username }}"
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/{{ item.key }}"
+    value: "{{ item.value}}"
+  with_items:
+    - { key: maximize, value: "'<Super>Up'" }
+    - { key: unmaximize, value: "'<Super>Down'" }
+    - { key: close, value: "'<Primary><Shift>q'" }
