@@ -15,4 +15,4 @@ if [[ -z $(which pass) ]]; then # if are not installed
 	fi
 fi
 
-curl -Lks https://raw.githubusercontent.com/homeofficehost/dotfiles/master/ansible.sh | /bin/bash
+curl -Lks https://raw.githubusercontent.com/homeofficehost/neoansible/master/ansible.sh | /bin/bash

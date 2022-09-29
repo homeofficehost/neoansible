@@ -1,5 +1,5 @@
 ---
-dotfiles_repo: "https://github.com/homeofficehost/dotfiles.git"
+dotfiles_repo: "https://github.com/homeofficehost/neoansible.git"
 repo_dir: /home/{{ username }}/.bare-dotfiles/
 work_dir: /home/{{ username }}/
 dotfiles_checkout:

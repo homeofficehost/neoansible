@@ -4,7 +4,7 @@
 ANSIBLEUSER="velociraptor"
 BRANCH="{{ branch | default('master') }}"
 LOGFILE="/var/log/ansible.log"
-REPO="{{ upstream | default('https://github.com/homeofficehost/dotfiles') }}"
+REPO="{{ upstream | default('https://github.com/homeofficehost/neoansible') }}"
 
 VAULT_ID="{{ username }}"
 PRECMD="sudo systemd-inhibit --who='ansible-pull' --why='provisioning'"
