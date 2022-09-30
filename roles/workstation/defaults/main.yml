@@ -9,14 +9,15 @@ gnome_extension_target:
   - { id: '5237',  name: 'rounded-window-corners' }
 
 gnome_enable_extensions:
+  - 'pamac-updates@manjaro.org'
+  - 'dash-to-dock@micxgx.gmail.com'
+  - 'appindicatorsupport@rgcjonas.gmail.com'
+  - 'gnome-ui-tune@itstime.tech'
+  - 'legacyschemeautoswitcher@joshimukul29.gmail.com'
+  - 'x11gestures@joseexposito.github.io'
   - 'rounded-window-corners@yilozt'
-  # - 'pamac-updates@manjaro.org'
-  # - 'dash-to-dock@micxgx.gmail.com'
-  # - 'appindicatorsupport@rgcjonas.gmail.com'
-  # - 'gnome-ui-tune@itstime.tech'
-  # - 'x11gestures@joseexposito.github.io'
+  - 'ding@rastersoft.com'
   # - 'nightthemeswitcher@romainvigier.fr'
-  # - 'ding@rastersoft.com'
   # - 'sound-output-device-chooser@kgshank.net'
   # - 'bluetooth-quick-connect@bjarosze.gmail.com'
   # - 'cpufreq@konkor'
